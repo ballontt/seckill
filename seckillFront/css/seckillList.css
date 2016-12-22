@@ -1,0 +1,14 @@
+#container {
+    margin:0 10%;
+    overflow: hidden;
+}
+.panel-heading{
+    text-align: center
+}
+
+.test {
+    width:5rem;
+    height: 5rem;
+    border:2px solid red;
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0">
+    <title>Bootstrap 101 Template</title>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <!-- Bootstrap -->
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!--jQuery Cookie操作插件-->
+    <script src="http://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <!--jQuery countDown倒计时插件-->
+<script src="http://cdn.bootcss.com/jquery.countdown/2.1.0/jquery.countdown.min.js"></script>
+    <script src="../js/seckillDetail.js"></script>
+    <link rel="stylesheet" href="../css/seckillDetail.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title"></h1>
+            </div>
+            <div class="panel-body">
+                <h2 class="text-danger">
+                    <!--显示time图标-->
+                    <span class="glyphicon glyphicon-time"></span>
+                    <!--展示倒计时-->
+                    <span  id="seckill-box">
+                        
+                    </span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!--登录层model，输入电话-->
+    <div class="modal fade bs-example-modal-lg" id="phoneModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="glyphicon glyphicon-phone"></span>
+                    <h4 class="modal-title">秒杀电话:</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                       <div class="col-md-8 col-md-offset-2">
+                           <input type="text" placeholder="请输入手机号" name="killPhone" id="killPhoneKey" class="form-control">
+                       </div> 
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-6">
+                            <span id="killPhoneMessage" class="glyphicon"></span>
+                        </div>
+                        <div class="col-xs-2">
+                            <button type="submit" class="btn btn-success" id="seckillPhoneBtn"><span class="glyphicon glyphicon-phone"></span>Submit</button>
+                        </div>
+                    </div>
+                </div><!--.modal-footer-->
+            </div> <!--.modal-content-->
+        </div>
+    </div>
+ </body> 
+</html>
